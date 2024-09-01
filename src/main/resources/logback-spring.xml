@@ -1,11 +1,8 @@
 <configuration>
-    <!-- Define o padrão de layout para as mensagens de log -->
-    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"/>
-
     <!-- Define um appender para saída no console (STDOUT) -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%message%n</pattern>
+            <pattern>%msg%n</pattern>
         </encoder>
     </appender>
 
